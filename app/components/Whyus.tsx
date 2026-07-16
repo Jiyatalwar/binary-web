@@ -73,10 +73,9 @@ const Whyus = () => {
           muted
           playsInline
           preload="metadata"
-          poster="/background-img/19366.jpg"
           className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-screen pointer-events-none z-0"
         >
-          <source src="/vedioes/hero-background2.mp4" type="video/mp4" />
+          <source src="vedioes/BG-IT.MP4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
