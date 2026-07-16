@@ -55,6 +55,7 @@ const Hero = () => {
         muted 
         playsInline
         preload="metadata"
+        poster="/background-img/19366.jpg"
       />
 
       {/* Dark Overlay */}
