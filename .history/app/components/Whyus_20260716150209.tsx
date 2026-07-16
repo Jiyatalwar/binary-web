@@ -85,23 +85,29 @@ const Whyus = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start w-full mb-10 lg:mb-14">
             
             {/* Left Hero Header Column */}
-            <div className="lg:col-span-6 group/hero cursor-default select-none animate-present-slow" style={{ animationDelay: '0s' }}>
-              <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-black text-white leading-[1.1] tracking-tight origin-left transition-transform duration-500">
-                Why Customers <br className="hidden lg:block"/>Choose 
-                <span className="font-bold text-cyan-400 block lg:inline-block lg:ml-3">Binary Global</span>
-              </h1>
-            </div>
-            
-            {/* Right Supporting Copy Column */}
-            <div className="lg:col-span-6 flex items-center h-full group/desc animate-present-slow" style={{ animationDelay: '0.3s' }}>
-              <p className="text-white stext-sm sm:text-base leading-relaxed max-w-xl">
-                We Provide Technology Services with Innovative Strategies, Broad Vision, and a Drive for Success.
-                Bring to the table win-win survival strategies to ensure proactive
-                domination. At the end of the day, going forward, a new normal
-                that has evolved from generation X is on the runway heading
-                towards a streamlined cloud solution.
-              </p>
-            </div> 
+           {/* Header Container - Replaced grid with a simple stacked flex column */}
+<div className="flex flex-col gap-5 max-w-3xl w-full mb-10 lg:mb-14">
+  
+  {/* Hero Header */}
+  <div className="group/hero cursor-default select-none animate-present-slow" style={{ animationDelay: '0s' }}>
+    <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-black text-white leading-[1.1] tracking-tight origin-left transition-transform duration-500">
+      Why Customers <br className="hidden lg:block"/>Choose 
+      <span className="font-bold text-cyan-400 block lg:inline-block lg:ml-3">Binary Global</span>
+    </h1>
+  </div>
+  
+  {/* Supporting Copy - Now renders cleanly right after/underneath the h1 */}
+  <div className="group/desc animate-present-slow" style={{ animationDelay: '0.3s' }}>
+    <p className="text-white text-sm sm:text-base leading-relaxed max-w-2xl">
+      We Provide Technology Services with Innovative Strategies, Broad Vision, and a Drive for Success.
+      Bring to the table win-win survival strategies to ensure proactive
+      domination. At the end of the day, going forward, a new normal
+      that has evolved from generation X is on the runway heading
+      towards a streamlined cloud solution.
+    </p>
+  </div> 
+
+</div>
           </div>
 
           {/* Row 2: Grid Deck - Cards made larger via padding (p-7) and typography sizing */}

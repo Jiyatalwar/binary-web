@@ -99,13 +99,14 @@ const Whyus = () => {
                 Bring to the table win-win survival strategies to ensure proactive
                 domination. At the end of the day, going forward, a new normal
                 that has evolved from generation X is on the runway heading
-                towards a streamlined cloud solution.
+                towards a streamlined cloud solution. User generated content in
+                real-time will have multiple touchpoints for offshoring.
               </p>
             </div> 
           </div>
 
           {/* Row 2: Grid Deck - Cards made larger via padding (p-7) and typography sizing */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 border-t border-white pt-6 lg:pt-8 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 border-t border-white/10 pt-6 lg:pt-8 w-full">
             {features.map((item, index) => (
               <div 
                 key={index} 

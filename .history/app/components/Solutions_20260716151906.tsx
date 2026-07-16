@@ -211,14 +211,14 @@ const Solutions = () => {
       <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-blue-100/40 rounded-full blur-[120px] -z-10" />
       <div className="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-indigo-100/40 rounded-full blur-[100px] -z-10" />
     
-      <div className="max-w-6xl mx-auto px-6 mt-[-100px]">
+     <div className="max-w-6xl mx-auto px-4 sm:px-6 mt-0 sm:mt-[-50px] lg:mt-[-100px]">
         
         {/* --- HERO / HEADING --- */}
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
-          <h2 className="mb-2 text-4xl md:text-6xl font-extrabold tracking-tight leading-[1.1] bg-gradient-to-b from-[#07065B] via-[#090979] to-[#020024] bg-clip-text text-transparent">
+          <h2 className="mb-2 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] bg-gradient-to-tr from-[#314f78] via-[#162234] to-[#182952] bg-clip-text text-transparent">
               Our Solutions
           </h2>
-         <p className=" mb-4 text-gray-800 tracking-normal text-sm md:text-xl max-w-2xl font-normal leading-tight mb-5">
+         <p className="mb-4 text-gray-800 tracking-normal text-sm sm:text-base md:text-lg lg:text-xl max-w-2xl font-normal leading-tight">
           We deliver state-of-the-art technological infrastructures to secure,<br/> automate, and accelerate operations across your entire global business.
         </p>
         </div>

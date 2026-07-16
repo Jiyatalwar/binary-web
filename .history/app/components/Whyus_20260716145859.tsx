@@ -97,9 +97,7 @@ const Whyus = () => {
               <p className="text-white stext-sm sm:text-base leading-relaxed max-w-xl">
                 We Provide Technology Services with Innovative Strategies, Broad Vision, and a Drive for Success.
                 Bring to the table win-win survival strategies to ensure proactive
-                domination. At the end of the day, going forward, a new normal
-                that has evolved from generation X is on the runway heading
-                towards a streamlined cloud solution.
+                
               </p>
             </div> 
           </div>

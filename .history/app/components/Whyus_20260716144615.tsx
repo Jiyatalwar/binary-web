@@ -94,18 +94,19 @@ const Whyus = () => {
             
             {/* Right Supporting Copy Column */}
             <div className="lg:col-span-6 flex items-center h-full group/desc animate-present-slow" style={{ animationDelay: '0.3s' }}>
-              <p className="text-white stext-sm sm:text-base leading-relaxed max-w-xl">
+              <p className="text-zinc-300 text-sm sm:text-base leading-relaxed max-w-xl">
                 We Provide Technology Services with Innovative Strategies, Broad Vision, and a Drive for Success.
                 Bring to the table win-win survival strategies to ensure proactive
                 domination. At the end of the day, going forward, a new normal
                 that has evolved from generation X is on the runway heading
-                towards a streamlined cloud solution.
+                towards a streamlined cloud solution. User generated content in
+                real-time will have multiple touchpoints for offshoring.
               </p>
             </div> 
           </div>
 
           {/* Row 2: Grid Deck - Cards made larger via padding (p-7) and typography sizing */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 border-t border-white pt-6 lg:pt-8 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 border-t border-white/10 pt-6 lg:pt-8 w-full">
             {features.map((item, index) => (
               <div 
                 key={index} 
@@ -118,7 +119,7 @@ const Whyus = () => {
                 </div>
                 
                 {/* Feature Header Segment */}
-                <h3 className="text-xl sm:text-base font-black tracking-wider uppercase mb-2 text-cyan-400 group-hover:text-cyan-600 leading-tight transition-colors duration-300">
+                <h3 className="text-sm sm:text-base font-bold tracking-wider uppercase mb-2 text-cyan-400 group-hover:text-cyan-600 leading-tight transition-colors duration-300">
                   {item.titleLine1} 
                   <span className="font-bold text-white group-hover:text-black block transition-colors duration-300">
                     {item.titleLine2}
@@ -126,7 +127,7 @@ const Whyus = () => {
                 </h3>
                 
                 {/* Description Body Block */}
-                <p className=" text-zinc-400 group-hover:text-white text-s leading-relaxed transition-colors duration-300">
+                <p className="text-zinc-400 group-hover:text-zinc-600 text-xs leading-relaxed transition-colors duration-300">
                   {item.desc}
                 </p>
               </div>
