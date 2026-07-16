@@ -126,7 +126,7 @@ const Whyus = () => {
                 </h3>
                 
                 {/* Description Body Block */}
-                <p className=" text-zinc-400 group-hover:text-white text-s leading-relaxed transition-colors duration-300">
+                <p className=" text-zinc-400 group-hover:text-gray-900 text-s leading-relaxed transition-colors duration-300">
                   {item.desc}
                 </p>
               </div>
