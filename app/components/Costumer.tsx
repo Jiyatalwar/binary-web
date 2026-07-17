@@ -33,14 +33,14 @@ const Costumer = () => {
 
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-8 w-full mt-0 sm:mt-[-30px] lg:mt-[-60px]">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         
         {/* Top Header Block */}
         <div className="max-w-3xl mb-12 sm:mb-16">
           <span className="text-xs font-bold tracking-widest uppercase text-zinc-500 block mb-3 ">
             Customer Stories
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-zinc-950 tracking-tight leading-tight mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black  lg:text-6xl bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent mb-6">
             Trusted by thousands of fast-growing companies.
           </h2>
           <p className="text-zinc-600 text-sm sm:text-base lg:text-lg max-w-2xl leading-relaxed mb-8">
@@ -62,9 +62,12 @@ const Costumer = () => {
                 <span className="text-xs font-bold tracking-widest uppercase text-zinc-400 block mb-6">
                   Featured
                 </span>
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold tracking-tight leading-snug text-zinc-100">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold tracking-tight leading-snug text-zinc-100 mb-12">
                   Our clients success is our greatest achievement - read their stories here!
                 </h3>
+                <p>
+                  Learn how fast-growing companies around the world have been successfully recruiting, onboarding, and improving employee experience with HRLink.
+                </p>
               </div>
               
               <div>

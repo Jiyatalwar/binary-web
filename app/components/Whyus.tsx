@@ -64,7 +64,7 @@ const Whyus = () => {
       `}</style>
 
       {/* Main Container - Controlled Max-Height Environment */}
-      <section className="relative w-full overflow-hidden bg-[#020617] flex flex-col justify-center min-h-[750px] lg:h-[780px] lg:max-h-[800px] py-12 md:py-16 mt-[-60px]">
+      <section className="relative w-full overflow-hidden bg-[#020617] flex flex-col justify-center min-h-[750px] lg:h-[780px] lg:max-h-[800px] py-12 md:py-16 ">
         
         {/* Ambient Video layer */}
         <video
@@ -75,12 +75,12 @@ const Whyus = () => {
           preload="metadata"
           className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-screen pointer-events-none z-0"
         >
-          <source src="vedioes/BG-IT.MP4" type="video/mp4" />
+         <source src="/vedioes/BG-IT.MP4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         {/* Content Matrix wrapper */}
-        <div className="relative z-10 w-full max-w-6xl mx-auto px-6 lg:px-4 flex flex-col justify-center h-full">
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center h-full">
           
           {/* Row 1: Split Header Deck - Added margin bottom layout constraint */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start w-full mb-10 lg:mb-14">
