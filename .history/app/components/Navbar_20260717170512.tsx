@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Menu, X, Search } from 'lucide-react'; // 👈 Imported Search icon
 import Hero from './Hero';
@@ -7,6 +7,7 @@ import Hero from './Hero';
 export default function Navbar() {
   const [activeTab, setActiveTab] = useState<string>('');
   const [isOpen, setIsOpen] = useState<boolean>(false); // Tracks mobile menu toggle state
+  const [isAtTop, setIsAtTop] = useState<boolean>(true);
 
   const navItems = [
     { name: 'Solutions', href: '#solutions' },
@@ -27,7 +28,18 @@ export default function Navbar() {
     <div>
       <div className="fixed top-4 sm:top-6 left-0 w-full z-50 flex justify-center px-4 sm:px-6 lg:px-8">
         {/* --- FLOATING CAPSULE CONTAINER --- */}
-        <header className="bg-[#18181b] border border-zinc-800/50 rounded-full h-20s sm:h-25 py-2 px-3 sm:px-6 flex items-center justify-between w-full max-w-7xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-md relative">
+        {/* headerClass toggles transparent capsule at top vs. filled capsule when scrolled */}
+        {/**
+         * - At top: transparent background, no border, no shadow (links remain visible)
+         * - When scrolled: dark capsule with border, shadow and blur
+         */}
+        <header
+          className={
+            isAtTop
+              ? 'rounded-full h-16 sm:h-20 py-2 px-3 sm:px-6 flex items-center justify-between w-full max-w-7xl relative'
+              : 'bg-[#18181b] border border-zinc-800/50 rounded-full h-16 sm:h-20 py-2 px-3 sm:px-6 flex items-center justify-between w-full max-w-7xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-md relative'
+          }
+        >
           
           {/* Left Side: Logo Brand Asset */}
           <a 
@@ -123,3 +135,15 @@ export default function Navbar() {
     </div>
   );
 }
+
+// scroll listener effect (outside return to attach lifecycle)
+useEffect(() => {
+  const handleScroll = () => {
+    setIsAtTop(window.scrollY < 20);
+  };
+  // attach listener
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  // initialize
+  handleScroll();
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
