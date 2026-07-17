@@ -11,7 +11,7 @@ const Contactus = () => {
         playsInline
         className="absolute inset-0 h-full w-full object-cover z-0"
       >
-        <source src="vedioes/futuristic-digital-circuit-board-logo-opener-2026-01-28-04-06-53-utc.mp4" type="video/mp4" />
+        <source src="vedioes/BG-IT.MP4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -47,7 +47,7 @@ const Contactus = () => {
           <div className="relative w-full pt-[56.25%]">
             <video
               className="absolute inset-0 h-full w-full object-cover"
-              src="vedioes/BG-IT.MP4"
+              src="vedioes/futuristic-digital-circuit-board-logo-opener-2026-01-28-04-06-53-utc.mp4"
               autoPlay
               loop
               muted
