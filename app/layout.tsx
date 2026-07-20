@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Binary Global Solutions",
+  title: "Binary Global web-clone ",
   description: "State-of-the-art technological infrastructures to secure, automate, and accelerate operations.",
 };
 
