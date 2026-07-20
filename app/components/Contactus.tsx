@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Contactus = () => {
   return (
     <section className="relative overflow-hidden px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
@@ -15,9 +13,9 @@ const Contactus = () => {
         Your browser does not support the video tag.
       </video>
 
-      {/* 2. Overlaid Gradient Shield (Ensures text remains highly legible) */}
+      {/* 2. Background Gradient Overlay */}
       <div 
-        className="absolute inset-0 z-10 pointer-events-none" 
+        className="absolute inset-0 bg-gradient-to-br from-gray-950/90 via-slate-900/70 to-blue-950/60 z-10 pointer-events-none" 
       />
 
       {/* 3. Main Content Container (Brought to front via relative z-20) */}
@@ -31,7 +29,7 @@ const Contactus = () => {
             Innovate with Binary Global for private markets & finance
           </h1>
 
-          <p className="mx-auto max-w-[450px] text-base leading-relaxed text-white lg:mx-0">
+          <p className="mx-auto max-w-[450px] text-base leading-relaxed text-slate-200 lg:mx-0">
             Process entire data rooms in minutes. Extract precise metrics from CIMs and financial statements.
           </p>
 
