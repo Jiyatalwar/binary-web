@@ -164,7 +164,7 @@ const SolutionsContent = () => {
               key={solutionName}
               href={href}
               scroll={false}
-              className={`px-6 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 shadow-sm border transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer  ${
+              className={`px-6 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 shadow-sm border ${
                 isActive
                   ? 'bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] text-white border-transparent'
                   : 'bg-white text-gray-900 border-gray-200/80 hover:bg-gray-50'

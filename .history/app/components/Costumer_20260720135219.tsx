@@ -121,7 +121,7 @@ const Costumer = () => {
                 <img 
                   src={story.image} 
                   alt={story.brand} 
-                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-103 "
+                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-103"
                 />
                 
                 {/* Embedded Floating Brand Box */}
@@ -135,7 +135,7 @@ const Costumer = () => {
                 <p className="text-zinc-800 text-sm font-medium leading-relaxed mb-4">
                   {story.desc}
                 </p>
-                <button className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-zinc-950 group-hover:text-zinc-600 transition-colors ">
+                <button className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-zinc-950 group-hover:text-zinc-600 transition-colors transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
                   Read more 
                   <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </button>

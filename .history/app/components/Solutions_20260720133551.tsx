@@ -164,7 +164,7 @@ const SolutionsContent = () => {
               key={solutionName}
               href={href}
               scroll={false}
-              className={`px-6 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 shadow-sm border transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer  ${
+              className={`px-6 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 shadow-sm border ${
                 isActive
                   ? 'bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] text-white border-transparent'
                   : 'bg-white text-gray-900 border-gray-200/80 hover:bg-gray-50'
@@ -190,11 +190,11 @@ const SolutionsContent = () => {
       </div>
 
       {/* Components Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
         {currentSolution.components.map((component) => (
           <div 
             key={component.id}  
-            className="group flex flex-col justify-between rounded-2xl bg-white border border-gray-200/60 shadow-sm hover:bg-gradient-to-b hover:from-zinc-950 hover:to-black transition-all duration-300 cursor-pointer overflow-hidden hover:shadow-xl h-full transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer"
+            className="group flex flex-col justify-between rounded-2xl bg-white border border-gray-200/60 shadow-sm hover:bg-gradient-to-b hover:from-zinc-950 hover:to-black transition-all duration-300 cursor-pointer overflow-hidden hover:shadow-xl h-full"
           >
             <div className="flex flex-col">
               {/* Image Container */}

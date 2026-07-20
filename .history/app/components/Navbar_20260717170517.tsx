@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import { Menu, X, Search } from 'lucide-react';
+import { Menu, X, Search } from 'lucide-react'; // 👈 Imported Search icon
 import Hero from './Hero';
 
 export default function Navbar() {
@@ -45,12 +45,12 @@ export default function Navbar() {
           </a>
 
           {/* Center: Desktop Navigation Links + Search Icon (Hidden on mobile/tablet) */}
-          <nav className="hidden lg:flex items-center space-x-1 relative ">
+          <nav className="hidden lg:flex items-center space-x-1 relative">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="relative px-3.5 py-2 rounded-full text-[11px] sm:text-xs xl:text-sm font-medium text-white hover:text-gray-900 transition-colors duration-300 whitespace-nowrap transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer"
+                className="relative px-3.5 py-2 rounded-full text-[11px] sm:text-xs xl:text-sm font-medium text-white hover:text-gray-900 transition-colors duration-300 whitespace-nowrap"
                 onMouseEnter={() => setActiveTab(item.name)}
                 onMouseLeave={() => setActiveTab('')}
               >

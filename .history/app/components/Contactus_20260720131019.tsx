@@ -25,15 +25,15 @@ const Contactus = () => {
         <div className="w-full max-w-2xl space-y-6 text-center lg:mx-0 lg:max-w-[550px] lg:text-left">
           <div className="flex items-center justify-center gap-2 text-sm text-gray-400 lg:justify-start" />
 
-          <h1 className="text-3xl font-bold leading-[1.15] tracking-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl  transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+          <h1 className="text-3xl font-bold leading-[1.15] tracking-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl">
             Innovate with Binary Global for private markets & finance
           </h1>
-          <p className="mx-auto max-w-[450px] text-base leading-relaxed text-slate-200 lg:mx-0 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+          <p className="mx-auto max-w-[450px] text-base leading-relaxed text-slate-200 lg:mx-0">
             Process entire data rooms in minutes. Extract precise metrics from CIMs and financial statements.
           </p>
 
           <div className="flex justify-center lg:justify-start">
-            <button className="rounded-full bg-blue-800 px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#efa332] hover:shadow-lg hover:shadow-orange-500/10 sm:px-8 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+            <button className="rounded-full bg-blue-800 px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#efa332] hover:shadow-lg hover:shadow-orange-500/10 sm:px-8">
               Book a demo
             </button>
           </div>
@@ -41,10 +41,10 @@ const Contactus = () => {
 
         {/* Right Video Column (Contains your inline demo element) */}
        <div className="w-full max-w-2xl rounded-2xl border border-white/20 shadow-2xl overflow-hidden relative z-30">
-  <div className="relative w-full pt-[56.25%] transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+  <div className="relative w-full pt-[56.25%]">
     {/* YouTube iframe replacing the video tag */}
     <iframe
-      className="absolute inset-0 h-full w-full object-cover pointer-events-none "
+      className="absolute inset-0 h-full w-full object-cover pointer-events-none"
       src="https://www.youtube.com/embed/jJYh8FoRYHw?autoplay=1&mute=1&loop=1&playlist=jJYh8FoRYHw&controls=0&modestbranding=1&rel=0"
       title="How Leading Finance Firms Use AI"
       allow="autoplay; encrypted-media"

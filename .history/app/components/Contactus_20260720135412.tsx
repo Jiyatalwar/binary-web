@@ -41,10 +41,10 @@ const Contactus = () => {
 
         {/* Right Video Column (Contains your inline demo element) */}
        <div className="w-full max-w-2xl rounded-2xl border border-white/20 shadow-2xl overflow-hidden relative z-30">
-  <div className="relative w-full pt-[56.25%] transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+  <div className="relative w-full pt-[56.25%]">
     {/* YouTube iframe replacing the video tag */}
     <iframe
-      className="absolute inset-0 h-full w-full object-cover pointer-events-none "
+      className="absolute inset-0 h-full w-full object-cover pointer-events-none transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer"
       src="https://www.youtube.com/embed/jJYh8FoRYHw?autoplay=1&mute=1&loop=1&playlist=jJYh8FoRYHw&controls=0&modestbranding=1&rel=0"
       title="How Leading Finance Firms Use AI"
       allow="autoplay; encrypted-media"

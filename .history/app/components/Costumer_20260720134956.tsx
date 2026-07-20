@@ -112,16 +112,16 @@ const Costumer = () => {
         </div>
 
         {/* Dynamic Card Grid (Row 3 Layout) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
           {gridStories.map((story) => (
-            <div key={story.id} className="group flex flex-col bg-transparent rounded-xl transition-all duration-300 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+            <div key={story.id} className="group flex flex-col bg-transparent rounded-xl transition-all duration-300">
               
               {/* Card Image Container aspect matching visual targets */}
               <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-zinc-100 mb-5 shadow-sm">
                 <img 
                   src={story.image} 
                   alt={story.brand} 
-                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-103 "
+                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-103"
                 />
                 
                 {/* Embedded Floating Brand Box */}
@@ -135,7 +135,7 @@ const Costumer = () => {
                 <p className="text-zinc-800 text-sm font-medium leading-relaxed mb-4">
                   {story.desc}
                 </p>
-                <button className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-zinc-950 group-hover:text-zinc-600 transition-colors ">
+                <button className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-zinc-950 group-hover:text-zinc-600 transition-colors">
                   Read more 
                   <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </button>

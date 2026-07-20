@@ -110,7 +110,7 @@ const Whyus = () => {
             {features.map((item, index) => (
               <div 
                 key={index} 
-                className="group flex flex-col items-start p-7 rounded-2xl border border-white/5 bg-gradient-to-br from-white/[0.04] to-transparent backdrop-blur-sm transition-all duration-300 cursor-pointer shadow-sm hover:bg-white hover:border-white hover:shadow-2xl overflow-hidden animate-present-slow transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer"
+                className="group flex flex-col items-start p-7 rounded-2xl border border-white/5 bg-gradient-to-br from-white/[0.04] to-transparent backdrop-blur-sm transition-all duration-300 cursor-pointer shadow-sm hover:bg-white hover:border-white hover:shadow-2xl overflow-hidden animate-present-slow"
                 style={{ animationDelay: `${0.5 + index * 0.1}s` }}
               >
                 {/* Vector Accent Node */}

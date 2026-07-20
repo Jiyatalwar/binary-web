@@ -94,7 +94,7 @@ const Whyus = () => {
             </div>
             
             {/* Right Supporting Copy Column */}
-            <div className="lg:col-span-6 flex items-center h-full group/desc animate-present-slow transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer" style={{ animationDelay: '0.3s' }}>
+            <div className="lg:col-span-6 flex items-center h-full group/desc animate-present-slow" style={{ animationDelay: '0.3s' }}>
               <p className="text-white stext-sm sm:text-base leading-relaxed max-w-xl">
                 We Provide Technology Services with Innovative Strategies, Broad Vision, and a Drive for Success.
                 Bring to the table win-win survival strategies to ensure proactive
@@ -106,11 +106,11 @@ const Whyus = () => {
           </div>
 
           {/* Row 2: Grid Deck - Cards made larger via padding (p-7) and typography sizing */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 border-t border-white pt-6 lg:pt-8 w-full ">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 border-t border-white pt-6 lg:pt-8 w-full">
             {features.map((item, index) => (
               <div 
                 key={index} 
-                className="group flex flex-col items-start p-7 rounded-2xl border border-white/5 bg-gradient-to-br from-white/[0.04] to-transparent backdrop-blur-sm transition-all duration-300 cursor-pointer shadow-sm hover:bg-white hover:border-white hover:shadow-2xl overflow-hidden animate-present-slow transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer"
+                className="group flex flex-col items-start p-7 rounded-2xl border border-white/5 bg-gradient-to-br from-white/[0.04] to-transparent backdrop-blur-sm transition-all duration-300 cursor-pointer shadow-sm hover:bg-white hover:border-white hover:shadow-2xl overflow-hidden animate-present-slow"
                 style={{ animationDelay: `${0.5 + index * 0.1}s` }}
               >
                 {/* Vector Accent Node */}

@@ -40,10 +40,10 @@ const Costumer = () => {
           <span className="text-xs font-bold tracking-widest uppercase text-zinc-500 block mb-3 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
             Customer Stories
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black  lg:text-6xl bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent mb-6 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black  lg:text-6xl bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent mb-6">
             Trusted by thousands of fast-growing companies.
           </h2>
-          <p className="text-zinc-600 text-sm sm:text-base lg:text-lg max-w-2xl leading-relaxed mb-8 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+          <p className="text-zinc-600 text-sm sm:text-base lg:text-lg max-w-2xl leading-relaxed mb-8">
             Learn how fast-growing companies around the world have been successfully recruiting, onboarding, and improving employee experience with HRLink.
           </p>
           {/* <button className="inline-flex items-center gap-2 bg-[#1e3d38] hover:bg-[#162e2a] text-white text-sm font-semibold py-3 px-5 rounded-lg transition-colors group shadow-sm">
@@ -59,19 +59,19 @@ const Costumer = () => {
             {/* Left Narrative Frame */}
             <div className="p-8 sm:p-12 lg:p-16 lg:col-span-7 flex flex-col justify-between text-white space-y-12">
               <div>
-                <span className="text-xs font-bold tracking-widest uppercase text-zinc-400 block mb-6 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+                <span className="text-xs font-bold tracking-widest uppercase text-zinc-400 block mb-6">
                   Featured
                 </span>
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold tracking-tight leading-snug text-zinc-100 mb-12 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold tracking-tight leading-snug text-zinc-100 mb-12">
                   Our clients success is our greatest achievement - read their stories here!
                 </h3>
-                <p className='transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer'>
+                <p>
                   Learn how fast-growing companies around the world have been successfully recruiting, onboarding, and improving employee experience with HRLink.
                 </p>
               </div>
               
               <div>
-                <button className="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-300 hover:text-white group transition-colors transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+                <button className="inline-flex items-center gap-1.5 text-sm font-medium text-zinc-300 hover:text-white group transition-colors">
                   Read more 
                   <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </button>
@@ -92,12 +92,12 @@ const Costumer = () => {
 
         {/* Subsection Filters Head */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-zinc-200 pb-5 mb-10 mt-0 sm:mt-[-30px] lg:mt-[-70px]">
-          <h4 className="text-2xl font-bold text-zinc-900 tracking-tight transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+          <h4 className="text-2xl font-bold text-zinc-900 tracking-tight ">
             Customer Success Stories
           </h4>
           
           {/* Functional Filters Dropdown UI Setup */}
-          <div className="flex gap-3 items-center ">
+          <div className="flex gap-3 items-center">
             <div className="relative">
               {/* <button className="inline-flex items-center gap-2 bg-zinc-50 border border-zinc-200 hover:bg-zinc-100 rounded-lg px-4 py-2 text-xs font-semibold text-zinc-700 transition-colors">
                 Industry <ChevronDown size={14} className="text-zinc-500" />
@@ -112,16 +112,16 @@ const Costumer = () => {
         </div>
 
         {/* Dynamic Card Grid (Row 3 Layout) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {gridStories.map((story) => (
-            <div key={story.id} className="group flex flex-col bg-transparent rounded-xl transition-all duration-300 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+            <div key={story.id} className="group flex flex-col bg-transparent rounded-xl transition-all duration-300">
               
               {/* Card Image Container aspect matching visual targets */}
               <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden bg-zinc-100 mb-5 shadow-sm">
                 <img 
                   src={story.image} 
                   alt={story.brand} 
-                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-103 "
+                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-103"
                 />
                 
                 {/* Embedded Floating Brand Box */}
@@ -135,7 +135,7 @@ const Costumer = () => {
                 <p className="text-zinc-800 text-sm font-medium leading-relaxed mb-4">
                   {story.desc}
                 </p>
-                <button className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-zinc-950 group-hover:text-zinc-600 transition-colors ">
+                <button className="inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wider text-zinc-950 group-hover:text-zinc-600 transition-colors">
                   Read more 
                   <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </button>

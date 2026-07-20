@@ -121,7 +121,7 @@ const Costumer = () => {
                 <img 
                   src={story.image} 
                   alt={story.brand} 
-                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-103 "
+                  className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-103 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer"
                 />
                 
                 {/* Embedded Floating Brand Box */}
