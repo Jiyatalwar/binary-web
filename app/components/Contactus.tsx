@@ -33,7 +33,7 @@ const Contactus = () => {
           </p>
 
           <div className="flex justify-center lg:justify-start">
-            <button className="rounded-full bg-blue-800 px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-[#efa332] hover:shadow-lg hover:shadow-orange-500/10 sm:px-8 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+            <button className="rounded-full bg-blue-800 px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-white hover:text-slate-900 sm:px-8 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
               Book a demo
             </button>
           </div>
