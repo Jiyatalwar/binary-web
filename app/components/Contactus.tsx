@@ -15,7 +15,7 @@ const Contactus = () => {
 
       {/* 2. Background Gradient Overlay */}
       <div 
-        className="absolute inset-0 bg-gradient-to-br from-bg-[#020617] via-bg-[#020617]/10 to-blue-950/60 z-10 pointer-events-none" 
+        className="absolute inset-0 bg-gradient-to-br from-[#020617] via-[#020617] to-[#020617]/10 z-10 pointer-events-none" 
       />
 
       {/* 3. Main Content Container (Brought to front via relative z-20) */}
@@ -28,7 +28,6 @@ const Contactus = () => {
           <h1 className="text-3xl font-bold leading-[1.15] tracking-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl">
             Innovate with Binary Global for private markets & finance
           </h1>
-
           <p className="mx-auto max-w-[450px] text-base leading-relaxed text-slate-200 lg:mx-0">
             Process entire data rooms in minutes. Extract precise metrics from CIMs and financial statements.
           </p>
