@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import { Menu, X, Search } from 'lucide-react';
+import { Menu, X, Search } from 'lucide-react'; // 👈 Imported Search icon
 import Hero from './Hero';
 
 export default function Navbar() {
@@ -27,7 +27,7 @@ export default function Navbar() {
     <div>
       <div className="fixed top-4 sm:top-6 left-0 w-full z-50 flex justify-center px-4 sm:px-6 lg:px-8">
         {/* --- FLOATING CAPSULE CONTAINER --- */}
-        <header className="bg-[#18181b] border border-zinc-800/50 rounded-full h-20s sm:h-25 py-2 px-3 sm:px-6 flex items-center justify-between w-full max-w-7xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] backdrop-blur-md relative">
+        <header className="bg-[#18181b]/70 rounded-full h-20s sm:h-25 py-2 px-3 sm:px-6 flex items-center justify-between w-full max-w-7xl backdrop-blur-md relative">
           
           {/* Left Side: Logo Brand Asset */}
           <a 
@@ -35,22 +35,22 @@ export default function Navbar() {
             className="flex items-center justify-center hover:scale-105 transition-transform duration-200 shrink-0 overflow-hidden"
           >
             <Image 
-              src="/logo/binarylogo.png"  
+              src="/logo/Binary Logo White.png"  
               alt="Binary Global Logo"
-              width={140}                
-              height={60}
-              className="w-[100px] sm:w-[120px] lg:w-[140px] h-auto object-contain"
+              width={130}                
+              height={130}
+              className="object-contain ml-10"
               priority                  
             />
           </a>
 
           {/* Center: Desktop Navigation Links + Search Icon (Hidden on mobile/tablet) */}
-          <nav className="hidden lg:flex items-center space-x-1 relative ">
+          <nav className="hidden lg:flex items-center space-x-1 relative">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="relative px-3.5 py-2 rounded-full text-[11px] sm:text-xs xl:text-sm font-medium text-white hover:text-gray-900 transition-colors duration-300 whitespace-nowrap transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer"
+                className="relative px-3.5 py-2 rounded-full text-[11px] sm:text-xs xl:text-sm font-medium text-white hover:text-gray-900 transition-colors duration-300 whitespace-nowrap"
                 onMouseEnter={() => setActiveTab(item.name)}
                 onMouseLeave={() => setActiveTab('')}
               >
