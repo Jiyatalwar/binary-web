@@ -146,7 +146,7 @@ const SolutionsContent = () => {
       {/* Top Level Header */}
       <div className="mb-[20px]">
         <span className="text-gray-500 font-medium text-sm block mb-2 uppercase tracking-wider">Our Solutions</span>
-        <h2 className=" text-5xl font-black block mb-2 bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent">
+        <h2 className=" text-5xl font-black block mb-2 bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent ">
           Elevate Your Business with Innovative <br/> IT System Integration by Binary Global.
         </h2>
       </div>
