@@ -15,7 +15,7 @@ const Contactus = () => {
 
       {/* 2. Background Gradient Overlay */}
       <div 
-        className="absolute inset-0 bg-gradient-to-br from-[#020617] via-[#020617] to-[#020617]/10 z-10 pointer-events-none" 
+        className="absolute inset-0 bg-[#020617] z-10 pointer-events-none" 
       />
 
       {/* 3. Main Content Container (Brought to front via relative z-20) */}
