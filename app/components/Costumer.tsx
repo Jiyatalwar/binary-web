@@ -99,14 +99,7 @@ const Costumer = () => {
           {/* Functional Filters Dropdown UI Setup */}
           <div className="flex gap-3 items-center ">
             <div className="relative">
-              {/* <button className="inline-flex items-center gap-2 bg-zinc-50 border border-zinc-200 hover:bg-zinc-100 rounded-lg px-4 py-2 text-xs font-semibold text-zinc-700 transition-colors">
-                Industry <ChevronDown size={14} className="text-zinc-500" />
-              </button>
-            </div>
-            <div className="relative">
-              <button className="inline-flex items-center gap-2 bg-zinc-50 border border-zinc-200 hover:bg-zinc-100 rounded-lg px-4 py-2 text-xs font-semibold text-zinc-700 transition-colors">
-                Category <ChevronDown size={14} className="text-zinc-500" />
-              </button> */}
+             
             </div>
           </div>
         </div>
