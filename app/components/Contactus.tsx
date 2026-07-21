@@ -11,7 +11,7 @@ const Contactus = () => {
   className="absolute inset-0 h-full w-full object-cover z-0"
 >
   <source src="vedioes/tecno.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
+  your system does not support 
 </video>
 
 {/* 2. Background Gradient Overlay */}
