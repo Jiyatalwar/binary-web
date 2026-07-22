@@ -89,26 +89,7 @@ const Footer = () => {
               <p>New Delhi-110020</p>
             </div>
 
-            {/* Country Flags Mock Container */}
-            {/* <div className="flex gap-2 items-center opacity-90">
-              <span title="India" className="text-lg">🇮🇳</span>
-              <span title="Singapore" className="text-lg">🇸🇬</span>
-              <span title="UK" className="text-lg">🇬🇧</span>
-              <span title="USA" className="text-lg">🇺🇸</span>
-            </div> */}
-            
-            {/* Social Icons */}
-            {/* <div className="flex gap-3 pt-2">
-              <a href="#" className="w-8 h-8 bg-white text-[#1a1a1a] flex items-center justify-center rounded-full hover:opacity-80 transition-opacity">
-                <span className="font-bold text-xs">YT</span>
-              </a>
-              <a href="#" className="w-8 h-8 bg-white text-[#1a1a1a] flex items-center justify-center rounded-full hover:opacity-80 transition-opacity">
-                <span className="font-bold text-sm">in</span>
-              </a>
-              <a href="#" className="w-8 h-8 bg-white text-[#1a1a1a] flex items-center justify-center rounded-full hover:opacity-80 transition-opacity">
-                <span className="font-bold text-base">X</span>
-              </a>
-            </div> */}
+         
           </div>
 
           {/* Right Columns (Links Directories grouped dynamically) */}
