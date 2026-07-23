@@ -37,7 +37,6 @@ const SolutionsContent = () => {
    
   ];
 
-  // Solutions data mapping all components for both modules
   const solutionsDataRepository: Record<string, SolutionData> = {
     'Smart Infrastructure': {
       title: 'Smart Infrastructure',
@@ -164,7 +163,7 @@ const SolutionsContent = () => {
               scroll={false}
               className={`px-6 py-2.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-200 shadow-sm border ${
                 isActive
-                  ? 'bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] text-white border-transparent'
+                  ? 'bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] text-cyan border-transparent'
                   : 'bg-white text-gray-900 border-gray-200/80 hover:bg-gray-50'
               }`}
             >
