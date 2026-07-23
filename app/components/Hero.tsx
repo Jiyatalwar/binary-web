@@ -89,8 +89,8 @@ const Hero = () => {
             onClick={() => goToSlide(index)}
             className={`h-3 rounded-full transition-all duration-300 ease-in-out focus:outline-none ${
               currentSlide === index 
-                ? 'w-8 bg-white'       // Active slide: elongated active capsule
-                : 'w-3 bg-white/40 hover:bg-white/70' // Inactive: standard circular dot
+                ? 'w-8 bg-white' 
+                : 'w-3 bg-white/40 hover:bg-white/70'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
