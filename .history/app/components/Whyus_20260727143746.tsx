@@ -31,13 +31,13 @@ const Whyus = () => {
       icon: <Cloud size={40} strokeWidth={1.2} />,
       titleLine1: "Cloud",
       titleLine2: "Confidence",
-      desc: "Secure, scalable, and cost-effective cloud solutions delivered with expert guidance and proven expertise."
+      desc: "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices."
     },
     {
       icon: <Briefcase size={40} strokeWidth={1.2} />,
       titleLine1: "Skilled Project",
       titleLine2: "Management",
-      desc: "Expert project management that delivers complex IT projects efficiently and on schedule."
+      desc: "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices."
     }
   ];
 

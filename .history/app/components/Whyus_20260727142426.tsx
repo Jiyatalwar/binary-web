@@ -11,13 +11,13 @@ const Whyus = () => {
     },
     {
       icon: <Target size={40} strokeWidth={1.2} />,
-      titleLine1: "Industry-Focused  ",
-      titleLine2: "Expertise",
+      titleLine1: "Industry-Focused Expertise ",
+      titleLine2: "Focused",
       desc: "Customized IT solutions tailored to your industry, ensuring seamless integration with your existing infrastructure."
     },
     {
       icon: <HeartHandshake size={40} strokeWidth={1.2} />,
-      titleLine1: "Exceptional Customer ",
+      titleLine1: "Exceptional Customer Service",
       titleLine2: "Service",
       desc: "Responsive, customer-focused support to ensure a seamless and successful technology experience."
     },
@@ -25,19 +25,19 @@ const Whyus = () => {
       icon: <Users size={40} strokeWidth={1.2} />,
       titleLine1: "Strong",
       titleLine2: "Partnerships",
-      desc: "Through alliances with top tech providers, we deliver innovative solutions that keep clients competitive and future-ready."
+      desc: "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices."
     },
     {
       icon: <Cloud size={40} strokeWidth={1.2} />,
       titleLine1: "Cloud",
       titleLine2: "Confidence",
-      desc: "Secure, scalable, and cost-effective cloud solutions delivered with expert guidance and proven expertise."
+      desc: "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices."
     },
     {
       icon: <Briefcase size={40} strokeWidth={1.2} />,
       titleLine1: "Skilled Project",
       titleLine2: "Management",
-      desc: "Expert project management that delivers complex IT projects efficiently and on schedule."
+      desc: "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices."
     }
   ];
 

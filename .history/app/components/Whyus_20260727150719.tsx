@@ -37,7 +37,7 @@ const Whyus = () => {
       icon: <Briefcase size={40} strokeWidth={1.2} />,
       titleLine1: "Skilled Project",
       titleLine2: "Management",
-      desc: "Expert project management that delivers complex IT projects efficiently and on schedule."
+      desc: "Expert project management that delivers complex IT projects efficiently and on schedule. "
     }
   ];
 

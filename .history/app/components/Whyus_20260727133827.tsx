@@ -5,39 +5,39 @@ const Whyus = () => {
   const features = [
     {
       icon: <Layers size={40} strokeWidth={1.2} />,
-      titleLine1: "Converged Technology",
-      titleLine2: " Solutions ",
-      desc: "Integrated networking, cloud, security, and collaboration solutions to improve performance and optimize costs. "
+      titleLine1: "Converged",
+      titleLine2: "Solutions",
+      desc: "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices."
     },
     {
       icon: <Target size={40} strokeWidth={1.2} />,
-      titleLine1: "Industry-Focused  ",
-      titleLine2: "Expertise",
-      desc: "Customized IT solutions tailored to your industry, ensuring seamless integration with your existing infrastructure."
+      titleLine1: "Industry Vertical",
+      titleLine2: "Focused",
+      desc: "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices."
     },
     {
       icon: <HeartHandshake size={40} strokeWidth={1.2} />,
-      titleLine1: "Exceptional Customer ",
+      titleLine1: "Exceptional Customer",
       titleLine2: "Service",
-      desc: "Responsive, customer-focused support to ensure a seamless and successful technology experience."
+      desc: "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices."
     },
     {
       icon: <Users size={40} strokeWidth={1.2} />,
       titleLine1: "Strong",
       titleLine2: "Partnerships",
-      desc: "Through alliances with top tech providers, we deliver innovative solutions that keep clients competitive and future-ready."
+      desc: "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices."
     },
     {
       icon: <Cloud size={40} strokeWidth={1.2} />,
       titleLine1: "Cloud",
       titleLine2: "Confidence",
-      desc: "Secure, scalable, and cost-effective cloud solutions delivered with expert guidance and proven expertise."
+      desc: "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices."
     },
     {
       icon: <Briefcase size={40} strokeWidth={1.2} />,
       titleLine1: "Skilled Project",
       titleLine2: "Management",
-      desc: "Expert project management that delivers complex IT projects efficiently and on schedule."
+      desc: "Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices."
     }
   ];
 
@@ -114,17 +114,17 @@ const Whyus = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start w-full mb-10 lg:mb-14">
             
             {/* Left Hero Header Column */}
-            <div className="lg:col-span-6 cursor-default select-none m animate-present-slow transition-transform duration-300 hover:scale-[1.02]" style={{ animationDelay: '0s' }}>
-              <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-black text-white leading-[1.1] tracking-tight origin-left mb-4 sm:whitespace-nowrap">
-               Why Choose 
-                <span className="font-bold text-cyan-400 block lg:inline-block lg:ml-3"> Binary Global?</span>
+            <div className="lg:col-span-6 cursor-default select-none animate-present-slow transition-transform duration-300 hover:scale-[1.02]" style={{ animationDelay: '0s' }}>
+              <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-black text-white leading-[1.1] tracking-tight origin-left">
+                Why Choose 
+                <span className="font-bold text-cyan-400 block lg:inline-block lg:ml-3">Binary Global?</span>
               </h1>
-              <h2 className="text-white text-xl  leading-relaxed max-w-xl sm:whitespace-nowrap">
-              Trusted IT Solutions Provider Driving Innovation & Business Success 
-              </h2>
+              <p className="text-white text-sm sm:text-base leading-relaxed max-w-xl">
+Trusted IT Solutions Provider Driving Innovation & Business Success 
+              </p>
             </div>
             
-            {/* Right Supporting Copy Column */}
+      
           </div>
 
           {/* Row 2: Grid Deck */}
