@@ -198,7 +198,7 @@ const SolutionsContent = () => {
           href={href}
           scroll={false}
           ref={isActive ? activeTabRef : null}
-          className={`px-4 sm:px-6 py-3 sm:py-2.5 rounded-full text-[13px] sm:text-xs md:text-sm font-medium shadow-sm border transition-all duration-300 hover:scale-[1.03] origin-left cursor-pointer whitespace-nowrap text-center snap-ml-4 ${
+          className={`px-4 sm:px-6 py-3 sm:py-2.5 rounded-full text-[15px] sm:text-xs md:text-sm font-medium shadow-sm border transition-all duration-300 hover:scale-[1.03] origin-left cursor-pointer whitespace-nowrap text-center snap-ml-4 ${
             isActive
               ? 'bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] text-white border-transparent'
               : 'bg-white text-gray-900 border-gray-200/80 hover:bg-gray-50'

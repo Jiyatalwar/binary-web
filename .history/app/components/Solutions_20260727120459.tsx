@@ -176,40 +176,30 @@ const SolutionsContent = () => {
       </div>
 
       {/* Solutions Navigation Selector Tabs (Smooth Mobile Horizontal Scroll Added) */}
-     {/* Solutions Navigation Selector Tabs (With Custom Scrollbar Track & Borders) */}
-<div 
-  className="my-[30px] sm:my-[40px] -mx-4 px-4 font-black overflow-x-auto snap-x snap-mandatory pb-3
-    [&::-webkit-scrollbar]:h-2 
-    [&::-webkit-scrollbar-track]:bg-gray-100 
-    [&::-webkit-scrollbar-track]:rounded-full 
-    [&::-webkit-scrollbar-thumb]:bg-gray-300 
-    [&::-webkit-scrollbar-thumb]:rounded-full 
-    hover:[&::-webkit-scrollbar-thumb]:bg-[#004785]/60 
-    scrollbar-thin"
->
-  <div className="flex items-center justify-start gap-2 sm:gap-3 w-max font-black  pb-3">
-    {solutionsNavbar.map((solutionName) => {
-      const isActive = activeSolution.toLowerCase() === solutionName.toLowerCase();
-      const href = `?solution=${encodeURIComponent(solutionName)}#solutions`;
+      <div className="my-[30px] sm:my-[40px] -mx-4 px-4 overflow-x-auto scrollbar-none snap-x snap-mandatory">
+        <div className="flex items-center justify-start gap-2 sm:gap-3 pb-2 w-max">
+          {solutionsNavbar.map((solutionName) => {
+            const isActive = activeSolution.toLowerCase() === solutionName.toLowerCase();
+            const href = `?solution=${encodeURIComponent(solutionName)}#solutions`;
 
-      return (
-        <Link
-          key={solutionName}
-          href={href}
-          scroll={false}
-          ref={isActive ? activeTabRef : null}
-          className={`px-4 sm:px-6 py-3 sm:py-2.5 rounded-full text-[13px] sm:text-xs md:text-sm font-medium shadow-sm border transition-all duration-300 hover:scale-[1.03] origin-left cursor-pointer whitespace-nowrap text-center snap-ml-4 ${
-            isActive
-              ? 'bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] text-white border-transparent'
-              : 'bg-white text-gray-900 border-gray-200/80 hover:bg-gray-50'
-          }`}
-        >
-          {solutionName}
-        </Link>
-      );
-    })}
-  </div>
-</div>
+            return (
+              <Link
+                key={solutionName}
+                href={href}
+                scroll={false}
+                ref={isActive ? activeTabRef : null}
+                className={`px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-[11px] sm:text-xs md:text-sm font-medium shadow-sm border transition-all duration-300 hover:scale-[1.03] origin-left cursor-pointer whitespace-nowrap text-center snap-ml-4 ${
+                  isActive
+                    ? 'bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] text-white border-transparent'
+                    : 'bg-white text-gray-900 border-gray-200/80 hover:bg-gray-50'
+                }`}
+              >
+                {solutionName}
+              </Link>
+            );
+          })}
+        </div>
+      </div>
 
       {/* Dynamic Header Box for Active Solution Context */}    
       <div className="mb-[40px] rounded-2xl bg-white">

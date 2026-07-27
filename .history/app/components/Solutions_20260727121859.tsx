@@ -170,7 +170,7 @@ const SolutionsContent = () => {
         <span className="text-gray-500 font-medium text-sm block mb-2 uppercase tracking-wider">
           Our Solutions
         </span>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black block mb-2 bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent transition-transform duration-300 hover:scale-[1.01] origin-left cursor-pointer">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-light block mb-2 bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent transition-transform duration-300 hover:scale-[1.01] origin-left cursor-pointer">
           Elevate Your Business with Innovative <br className="hidden sm:inline"/> IT System Integration by Binary Global.
         </h2>
       </div>
@@ -187,7 +187,7 @@ const SolutionsContent = () => {
     hover:[&::-webkit-scrollbar-thumb]:bg-[#004785]/60 
     scrollbar-thin"
 >
-  <div className="flex items-center justify-start gap-2 sm:gap-3 w-max font-black  pb-3">
+  <div className="flex items-center justify-start gap-2 sm:gap-3 w-max  pb-3">
     {solutionsNavbar.map((solutionName) => {
       const isActive = activeSolution.toLowerCase() === solutionName.toLowerCase();
       const href = `?solution=${encodeURIComponent(solutionName)}#solutions`;
@@ -198,7 +198,7 @@ const SolutionsContent = () => {
           href={href}
           scroll={false}
           ref={isActive ? activeTabRef : null}
-          className={`px-4 sm:px-6 py-3 sm:py-2.5 rounded-full text-[13px] sm:text-xs md:text-sm font-medium shadow-sm border transition-all duration-300 hover:scale-[1.03] origin-left cursor-pointer whitespace-nowrap text-center snap-ml-4 ${
+          className={`px-4 sm:px-6 py-2 sm:py-2.5 rounded-full text-[11px] sm:text-xs md:text-sm font-medium shadow-sm border transition-all duration-300 hover:scale-[1.03] origin-left cursor-pointer whitespace-nowrap text-center snap-ml-4 ${
             isActive
               ? 'bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] text-white border-transparent'
               : 'bg-white text-gray-900 border-gray-200/80 hover:bg-gray-50'
