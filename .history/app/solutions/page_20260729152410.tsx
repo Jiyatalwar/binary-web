@@ -154,30 +154,21 @@ const SolutionsContent = () => {
   }, [activeSolution]);
 
   return (
-    /* 1. Full-bleed edge-to-edge backdrop container wrapper layout */
     <div 
-      className="w-full bg-cover bg-center bg-no-repeat min-h-screen relative overflow-hidden"
-      style={{ 
-        // add bg img here 
-        backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.95)), url('')" 
-      }}
+      id="solutions" 
+      ref={containerRef}
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-gray-900 min-h-screen scroll-mt-28"
     >
-      {/* 2. Inner structural layout layer grid alignment */}
-      <div 
-        id="solutions" 
-        ref={containerRef}
-        className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-gray-900 min-h-screen  z-10 mt-[-60px]"
-      >
-        
-        {/* Top Level Header */}
-        <div className="relative z-10">
-          <span className="text-gray-500 font-medium text-sm block mb-2 uppercase tracking-wider">
-            Our Solutions
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black block mb-2 bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent transition-transform duration-300 hover:scale-[1.01] origin-left cursor-pointer">
-            Elevate Your Business with Innovative <br className="hidden sm:inline"/> IT System Integration.
-          </h2>
-        </div>
+      
+      {/* Top Level Header */}
+      <div className="mb-[20px]">
+        <span className="text-gray-500 font-medium text-sm block mb-2 uppercase tracking-wider">
+          Our Solutions
+        </span>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black block mb-2 bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent transition-transform duration-300 hover:scale-[1.01] origin-left cursor-pointer">
+          Elevate Your Business with Innovative <br className="hidden sm:inline"/> IT System Integration.
+        </h2>
+      </div>
 
         {/* Solutions Navigation Selector Tabs */}
         <div 
@@ -214,19 +205,18 @@ const SolutionsContent = () => {
           </div>
         </div>
 
-        {/* Dynamic Header Box for Active Solution Context */}    
-        {/* active dyanamic link*/}
-        <div className="mb-[40px] rounded-2xl bg-white/75 backdrop-blur-md p-6 border border-white/60 relative z-10 shadow-sm">
-          <span className="text-lg sm:text-xl font-black uppercase tracking-widest block mb-2 bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent transition-transform duration-300 hover:scale-[1.01] origin-left cursor-pointer">
-            {currentSolution.title}
-          </span>
-          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#004785] mb-3 leading-snug transition-transform duration-300 hover:scale-[1.01] origin-left cursor-pointer">
-            {currentSolution.tagline}
-          </h3>
-          <p className="text-gray-600 text-xs sm:text-sm leading-relaxed max-w-2xl transition-transform duration-300 hover:scale-[1.01] origin-left cursor-pointer">
-            {currentSolution.description}
-          </p>
-        </div>
+      {/* Dynamic Header Box for Active Solution Context */}    
+      <div className="mb-[40px] rounded-2xl bg-white">
+        <span className="text-lg sm:text-xl font-black uppercase tracking-widest block mb-2 bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent transition-transform duration-300 hover:scale-[1.01] origin-left cursor-pointer">
+          {currentSolution.title}
+        </span>
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#004785] mb-3 leading-snug transition-transform duration-300 hover:scale-[1.01] origin-left cursor-pointer">
+          {currentSolution.tagline}
+        </h3>
+        <p className="text-gray-600 text-xs sm:text-sm leading-relaxed max-w-2xl transition-transform duration-300 hover:scale-[1.01] origin-left cursor-pointer">
+          {currentSolution.description}
+        </p>
+      </div>
 
         {/* Components Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
