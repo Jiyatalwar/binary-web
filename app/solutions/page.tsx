@@ -158,7 +158,7 @@ const SolutionsContent = () => {
     <div 
       className="w-full bg-cover bg-center bg-no-repeat min-h-screen relative overflow-hidden"
       style={{ 
-        // Swap your placeholder out for your target local public/ root directory link
+        // add bg img here 
         backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.95)), url('')" 
       }}
     >
@@ -215,6 +215,7 @@ const SolutionsContent = () => {
         </div>
 
         {/* Dynamic Header Box for Active Solution Context */}    
+        {/* active dyanamic link*/}
         <div className="mb-[40px] rounded-2xl bg-white/75 backdrop-blur-md p-6 border border-white/60 relative z-10 shadow-sm">
           <span className="text-lg sm:text-xl font-black uppercase tracking-widest block mb-2 bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent transition-transform duration-300 hover:scale-[1.01] origin-left cursor-pointer">
             {currentSolution.title}
