@@ -42,8 +42,8 @@ const SolutionsContent = () => {
   const solutionsDataRepository: Record<string, SolutionData> = {
     'Integrated Infrastructure': {
       title: 'Integrated Infrastructure',
-      tagline: 'Enterprise-Grade Infrastructure That Scales with Your Business',
-      description: 'Deploy advanced edge, wireless, and network architectures custom-built for zero-downtime scalability and high performance.',
+      tagline: 'Enterprise Networking & Connectivity Solutions',
+      description: 'Optimize business connectivity with secure wireless solutions, intelligent network architectures, and scalable infrastructure.',
       components: [
         {
           id: 1,
