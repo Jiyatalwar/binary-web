@@ -1,15 +1,3 @@
-import React from 'react'
-
-const page = () => {
-  return (
-    <div className='text-3xl text-center h-200 bg-gray-200 text-teal-900'>
-      sarvice page 
-    </div>
-  )
-}
-
-export default page
-
 // import React from 'react';
 // import { Briefcase, Wrench, Lightbulb, Cpu } from 'lucide-react';
 

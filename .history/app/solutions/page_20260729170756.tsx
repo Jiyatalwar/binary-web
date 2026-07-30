@@ -114,7 +114,7 @@ const SolutionsContent = () => {
         },
         {
           id: 10,
-          title: 'RPA', 
+          title: 'RPA',
           description: 'Maximize Productivity with RPA Solutions. Automate Tasks, Reduce Errors, and Improve Accuracy. Contact Us to Transform Your Business Processes.',
           imageUrl: '/images/rpa.jpg',
           imageAlt: 'Robotic Process Automation control script nodes'
