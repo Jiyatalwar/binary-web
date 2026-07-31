@@ -41,9 +41,9 @@ const SolutionsContent = () => {
   // Solutions data mapping all components for both modules
   const solutionsDataRepository: Record<string, SolutionData> = {
     'Smart Infrastructure': {
-      title: 'Smart Infrastructure',
-      tagline: 'Enterprise-Grade Infrastructure That Scales with Your Business',
-      description: 'Deploy advanced edge, wireless, and network architectures custom-built for zero-downtime scalability and high performance.',
+      title: 'Integrated Infrastructure',
+      tagline: 'Enterprise Networking & Connectivity Solutions',
+      description: 'Optimize business connectivity with secure wireless solutions, intelligent network architectures, and scalable infrastructure.',
       components: [
         {
           id: 1,
@@ -98,35 +98,35 @@ const SolutionsContent = () => {
           id: 7,  
           title: 'Data Analytics',
           description: 'Make Data-Driven Decisions Easily with Our Advanced Analytics.',
-          imageUrl: '/images/data-analytics.jpg',
+          imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpKG7wkQEkj8yRUJQXpXPjZa7xqRWsKSZIedjYJvtnzA&s=10',
           imageAlt: 'Data Analytics visualization overview'
         },
         {
           id: 8,
           title: 'AI Solution',
           description: 'Transform your business with our AI-powered IT services and stay ahead of the competition.',
-          imageUrl: '/images/ai-solutions.jpg',
+          imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFcmRzXdkcT8VJSDMG1PIxk_p7iP3GEXgZKlPCudLSdw&s=10',
           imageAlt: 'Artificial intelligence infrastructure layout'
         },
         {
           id: 9,
           title: 'Application Advisory',
           description: "Make Smart Decisions for Your Apps with Binary Global's IT Services. Boost Your Business Success.",
-          imageUrl: '/images/app-advisory.jpg',
+          imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkEHckqvWT7hpvuX4SgW3IrhdfEwcKmRIWiUo-teI-9Q&s=10',
           imageAlt: 'Application mapping advisory board consultation'
         },
         {
           id: 10,
           title: 'RPA',
           description: 'Maximize Productivity with RPA Solutions. Automate Tasks, Reduce Errors, and Improve Accuracy. Contact Us to Transform Your Business Processes.',
-          imageUrl: '/images/rpa.jpg',
+          imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRznz46b6CDmrG0GIHoy0NIu7Ug4RNxO2VMFwtsg_tLKw&s=10',
           imageAlt: 'Robotic Process Automation control script nodes'
         },
         {
           id: 11,
           title: 'Automated Machine Learning',
           description: 'Supercharge your business insights with Automated Machine Learning from Binary Global. Utilize cutting-edge technology to analyze complex data effortlessly and make informed decisions.',
-          imageUrl: '/images/auto-ml.jpg',
+          imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_kqU5JOh6lZxPNfnG-WwH15CrzRV4rxMXXt9tkHX-Mw&s=10',
           imageAlt: 'Automated machine learning computing array'
         }
       ]
