@@ -41,9 +41,9 @@ const SolutionsContent = () => {
   // Solutions data mapping all components for both modules
   const solutionsDataRepository: Record<string, SolutionData> = {
     'Smart Infrastructure': {
-      title: 'Integrated Infrastructure',
-      tagline: 'Enterprise Networking & Connectivity Solutions',
-      description: 'Optimize business connectivity with secure wireless solutions, intelligent network architectures, and scalable infrastructure.',
+      title: 'Smart Infrastructure',
+      tagline: 'Enterprise-Grade Infrastructure That Scales with Your Business',
+      description: 'Deploy advanced edge, wireless, and network architectures custom-built for zero-downtime scalability and high performance.',
       components: [
         {
           id: 1,
