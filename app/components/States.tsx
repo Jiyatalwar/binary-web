@@ -2,43 +2,36 @@
 
 import React, { useState, useEffect } from 'react'
 
-const AnimatedCounter = ({ targetValue }) => {
-  // Initialize with targetValue to prevent layout shift on first mount
-  const [count, setCount] = useState(targetValue)
-  const [trigger, setTrigger] = useState(0)
+interface AnimatedCounterProps {
+  targetValue: string
+}
+
+const AnimatedCounter: React.FC<AnimatedCounterProps> = ({ targetValue }) => {
+  // Extract numbers securely, ignoring commas, plus signs, or currency markers
+  const numericTarget = parseInt(targetValue.replace(/[^0-9]/g, ''), 10) || 0
+  const [count, setCount] = useState<number>(0)
+  const [trigger, setTrigger] = useState<number>(0)
 
   // 1. Loop that runs every 10 seconds to auto-rerun the animation
   useEffect(() => {
     const autoRefreshInterval = setInterval(() => {
-      setCount(0) // Reset back to 0 right before animating up
-      setTrigger(prev => prev + 1) // Fire the animation useEffect again
-    }, 10000) // 10,000 milliseconds = 10 seconds
+      setTrigger(prev => prev + 1)
+    }, 10000)
 
     return () => clearInterval(autoRefreshInterval)
   }, [])
 
   // 2. Core frame-by-frame counting animation logic
   useEffect(() => {
-    const numericTarget = parseInt(targetValue.replace(/[^0-9]/g, ''), 10)
-    
-    if (isNaN(numericTarget)) {
-      setCount(targetValue)
-      return
-    }
-
-    setCount(0) // Ensure it starts exactly at 0 for the count up
-
-    const duration = 1500 // Animation takes 1.5 seconds to complete
+    let frame = 0
+    const duration = 1500 // 1.5 seconds
     const frameRate = 1000 / 60 
     const totalFrames = Math.round(duration / frameRate)
-    let frame = 0
 
     const counterInterval = setInterval(() => {
       frame++
-      
-      // Easing function (easeOutQuad) for a smooth finish
       const progress = frame / totalFrames
-      const easeOutProgress = progress * (2 - progress)
+      const easeOutProgress = progress * (2 - progress) // easeOutQuad
       
       const currentCount = Math.round(easeOutProgress * numericTarget)
 
@@ -51,14 +44,12 @@ const AnimatedCounter = ({ targetValue }) => {
     }, frameRate)
 
     return () => clearInterval(counterInterval)
-  }, [targetValue, trigger])
+  }, [numericTarget, trigger])
 
-  const formatDisplay = (num) => {
-    if (typeof num === 'string') return num
-
-    // Fix explicit typing check implicitly for TypeScript/Linters
-    const formattedNum = Number(num).toLocaleString()
-
+  // Clear format parsing wrapper
+  const formatDisplay = (num: number) => {
+    const formattedNum = num.toLocaleString()
+    
     if (targetValue.includes('$') && targetValue.includes('+')) {
       return `$${formattedNum} +`
     } else if (targetValue.includes('+')) {
@@ -89,14 +80,12 @@ const States = () => {
                        border border-gray-800/60 backdrop-blur-md
                        shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]
                        transition-all duration-700 ease-out hover:border-gray-700/80
-                       min-h-[96px]" // Keeps container structure stable during count resets
+                       min-h-[96px]"
           >
-            {/* Animated Serif Font for Numbers */}
             <span className="text-3xl xl:text-4xl font-serif text-white tracking-wide whitespace-nowrap">
               <AnimatedCounter targetValue={stat.value} />
             </span>
             
-            {/* Label aligned to the right side of the card */}
             <span className="text-white text-xs xl:text-sm text-right font-medium max-w-[110px] leading-snug">
               {stat.label}
             </span>
@@ -107,4 +96,4 @@ const States = () => {
   )
 }
 
-export default States 
+export default States
