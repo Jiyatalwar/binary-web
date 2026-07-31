@@ -1,0 +1,110 @@
+"use client"
+
+import React, { useState, useEffect } from 'react'
+
+const AnimatedCounter = ({ targetValue }) => {
+  // Initialize with targetValue to prevent layout shift on first mount
+  const [count, setCount] = useState(targetValue)
+  const [trigger, setTrigger] = useState(0)
+
+  // 1. Loop that runs every 10 seconds to auto-rerun the animation
+  useEffect(() => {
+    const autoRefreshInterval = setInterval(() => {
+      setCount(0) // Reset back to 0 right before animating up
+      setTrigger(prev => prev + 1) // Fire the animation useEffect again
+    }, 10000) // 10,000 milliseconds = 10 seconds
+
+    return () => clearInterval(autoRefreshInterval)
+  }, [])
+
+  // 2. Core frame-by-frame counting animation logic
+  useEffect(() => {
+    const numericTarget = parseInt(targetValue.replace(/[^0-9]/g, ''), 10)
+    
+    if (isNaN(numericTarget)) {
+      setCount(targetValue)
+      return
+    }
+
+    setCount(0) // Ensure it starts exactly at 0 for the count up
+
+    const duration = 1500 // Animation takes 1.5 seconds to complete
+    const frameRate = 1000 / 60 
+    const totalFrames = Math.round(duration / frameRate)
+    let frame = 0
+
+    const counterInterval = setInterval(() => {
+      frame++
+      
+      // Easing function (easeOutQuad) for a smooth finish
+      const progress = frame / totalFrames
+      const easeOutProgress = progress * (2 - progress)
+      
+      const currentCount = Math.round(easeOutProgress * numericTarget)
+
+      if (frame >= totalFrames) {
+        setCount(numericTarget)
+        clearInterval(counterInterval)
+      } else {
+        setCount(currentCount)
+      }
+    }, frameRate)
+
+    return () => clearInterval(counterInterval)
+  }, [targetValue, trigger])
+
+  const formatDisplay = (num) => {
+    if (typeof num === 'string') return num
+
+    // Fix explicit typing check implicitly for TypeScript/Linters
+    const formattedNum = Number(num).toLocaleString()
+
+    if (targetValue.includes('$') && targetValue.includes('+')) {
+      return `$${formattedNum} +`
+    } else if (targetValue.includes('+')) {
+      return `${formattedNum} +`
+    }
+    return formattedNum
+  }
+
+  return <>{formatDisplay(count)}</>
+}
+
+const States = () => {
+  const statsData = [
+    { value: '76 +', label: 'Turnover (in Million USD)' },
+    { value: '220 +', label: 'Experts' },
+    { value: '25 +', label: 'Years of Service' },
+    { value: '2,500 +', label: 'Customers Served' }
+  ]
+
+  return (
+    <div className="w-full bg-[#0a0f18] py-12 px-4 flex justify-center items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl w-full">
+        {statsData.map((stat, index) => (
+          <div
+            key={index}
+            className="flex items-center justify-between px-6 py-6 rounded-2xl 
+                       bg-gradient-to-r from-[#161b26]/60 to-[#0f141d]/60 
+                       border border-gray-800/60 backdrop-blur-md
+                       shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]
+                       transition-all duration-700 ease-out hover:border-gray-700/80
+                       min-h-[96px]" // Keeps container structure stable during count resets
+          >
+            {/* Animated Serif Font for Numbers */}
+            <span className="text-3xl xl:text-4xl font-serif text-white tracking-wide whitespace-nowrap">
+              <AnimatedCounter targetValue={stat.value} />
+            </span>
+            
+            {/* Label aligned to the right side of the card */}
+            <span className="text-white text-xs xl:text-sm text-right font-medium max-w-[110px] leading-snug">
+              {stat.label}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default States 
