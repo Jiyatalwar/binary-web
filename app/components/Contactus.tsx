@@ -26,10 +26,10 @@ const Contactus = () => {
           <div className="flex items-center justify-center gap-2 text-sm text-gray-400 lg:justify-start" />
 
           <h1 className="text-3xl font-bold leading-[1.15] tracking-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl  transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
-            Innovate with Binary Global for private markets & finance
+           Accelerate Digital Transformation with Binary Global
           </h1>
           <p className="mx-auto max-w-[450px] text-base leading-relaxed text-slate-200 lg:mx-0 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
-            Process entire data rooms in minutes. Extract precise metrics from CIMs and financial statements.
+            Leverage AI, Cloud Computing, Automation, and Expert Technology Consulting for Long-Term Success and Competitive Advantage.
           </p>
 
           <div className="flex justify-center lg:justify-start">

@@ -10,24 +10,24 @@ const Costumer = () => {
   const gridStories = [
     {
       id: 1,
-      brand: "Endpoint Security",
+      brand: "Wi-Fi 6E & Wi-Fi 7 Rollout",
       logoBg: "bg-emerald-50 text-emerald-700 border-emerald-200",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQomf2Cob3jrKjDQqjjSlR7Ksbi4IIAX6Ur-hLM578JxA&s=10",
-      desc: "Effective Data Management for a Telecom CDN Network Using NetApp Storage Solution",
+      desc: "Scaling High-Density Wireless Networks with Wi-Fi 6E & Wi-Fi 7 Solutions",
     },
     {
       id: 2,
-      brand: "Data Management",
+      brand: "Unified Communications",
       logoBg: "bg-orange-50 text-orange-700 border-orange-200",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaPXzbxipxaqVU1WIiHawlmk4IWfQTRAx0nwNxZUNBSA&s=10",
-      desc: "Strengthening Data Protection for a Leading Indian Digital Connectivity Infrastructure Company Using Forcepoint DLP",
+      desc: "Transforming Enterprise Collaboration with Unified Communications Solutions",
     },
     {
       id: 3,
-      brand: "Endpoint Security",
+      brand: "Network Infrastructure",
       logoBg: "bg-purple-50 text-purple-700 border-purple-200",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG2sNLbiTcS9oNuFOu_FDtf8RAZgK6fNSOWBiD7MN8Dg&s=10",
-      desc: "Strengthening Endpoint Security for a Small Finance Bank using Sophos Endpoint Security",
+      desc: "Optimizing Multi-Site Connectivity with Advanced WAN Architecture",
     }
   ];
 
@@ -37,9 +37,9 @@ const Costumer = () => {
         
         {/* Top Header Block */}
         <div className="max-w-3xl mb-12 sm:mb-16 ">
-          <span className="text-xs font-bold tracking-widest uppercase text-zinc-500 block mb-3 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+          {/* <span className="text-xs font-bold tracking-widest uppercase text-zinc-500 block mb-3 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
             Customer Stories
-          </span>
+          </span> */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black  lg:text-6xl bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent mb-6 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
             Trusted by thousands of fast-growing companies.
           </h2>
@@ -59,14 +59,14 @@ const Costumer = () => {
             {/* Left Narrative Frame */}
             <div className="p-8 sm:p-12 lg:p-16 lg:col-span-7 flex flex-col justify-between text-white space-y-12">
               <div>
-                <span className="text-xs font-bold tracking-widest uppercase text-zinc-400 block mb-6 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+                {/* <span className="text-xs font-bold tracking-widest uppercase text-zinc-400 block mb-6 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
                   Featured
-                </span>
+                </span> */}
                 <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold tracking-tight leading-snug text-zinc-100 mb-12 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
-                  Our clients success is our greatest achievement - read their stories here!
+                  Enterprise Cybersecurity, Cloud, Networking & Infrastructure Success Stories
                 </h3>
                 <p className='transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer'>
-                  Learn how fast-growing companies around the world have been successfully recruiting, onboarding, and improving employee experience with HRLink.
+                  Explore real-world examples of how organizations improved connectivity, secured critical assets, enhanced operational efficiency, and accelerated business growth through technology innovation.
                 </p>
               </div>
               

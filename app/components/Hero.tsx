@@ -3,21 +3,32 @@ import React, { useState, useEffect } from 'react';
 const Hero = () => {
   const slides = [
     {
-      title: "Transforming Your IT Landscape For The Future",
-      subtitle: "Build the Backbone of Innovation with Our ICT Infrastructure Services. Ensure Seamless Connectivity and Optimized Performance."
+      title: "Transforming IT Infrastructure for Enterprise Growth",
+      subtitle: "Empower your organization with next-generation networking, cloud-ready infrastructure, and secure connectivity solutions."
     },
     {
-      title: "Smart. Connected. Infrastructure",
-      subtitle: "Unlock Cloud Potential with Our Smart Infrastructure. Accelerate Growth, Streamline Operations, and Stay Ahead of the Competition."
+      title: "Intelligent Infrastructure for a Connected Enterprise",
+      subtitle: "Unlock Cloud Potential with Infrastructure Designed for Speed, Scale, and Operational Excellence."
     },
     {
-      title: "Protecting Your Digital World, One Byte At A Time",
-      subtitle: "Empower Your Organization with Robust Cyber Defense. Get Multi-Layered Protection, Threat Detection, and Rapid Response."
+      title: "Secure. Detect. Respond. Cybersecurity Without Compromise.",
+      subtitle: "Enable secure growth with intelligent cybersecurity solutions that protect critical infrastructure, data, and digital operations."
     },
      {
-      title: "Maximize Your Data's Value With Our Comprehensive Management Solutions",
-      subtitle: "Harness Your Data’s Value with Our Intelligent Management Solution. Leverage Advanced Analytics and Automation to Drive Growth and Competitiveness."
+      title: "Data Management Solutions That Drive Enterprise Growth",
+      subtitle: "Turn complex data into strategic insights with scalable data management, advanced analytics, and AI-driven automation services."
+    },
+     {
+      title: "Cloud Transformation & Application Modernization Solutions",
+      subtitle: "Empower Your Business with Agile Cloud Adoption, Application Modernization, and Scalable Innovation for the Cloud Era."
+    },
+     {
+      title: "End-to-End Managed IT Services for Business Continuity and Growth",
+      subtitle: "Enhance business performance with proactive IT management, infrastructure support, cybersecurity services, and 24×7 monitoring."
     }
+
+
+
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -44,7 +55,7 @@ const Hero = () => {
   }, [currentSlide, slides.length]); // Updated dependency to track currentSlide changes safely
 
   return (
-    <div className="relative min-h-[480px] sm:min-h-[560px] lg:h-[600px] w-full overflow-hidden text-white p-4 sm:p-6 lg:p-8 flex flex-col items-center justify-center text-center">
+    <div className="relative min-h-[480px] sm:min-h-[900px] lg:h-[600px] w-full overflow-hidden text-white p-4 sm:p-6 lg:p-8 flex flex-col items-center justify-center text-center">
       
       {/* Background Video */}
       <video 
