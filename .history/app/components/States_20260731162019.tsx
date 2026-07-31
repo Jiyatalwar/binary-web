@@ -79,7 +79,7 @@ const States = () => {
   ]
 
   return (
-    <div className="w-full bg-[#0a0f18] py-12 px-4 flex justify-center items-center">
+    <div className="w-full bg-[#03002e]  py-12 px-4 flex justify-center items-center">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl w-full">
         {statsData.map((stat, index) => (
           <div

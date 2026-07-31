@@ -1,8 +1,7 @@
-import States from "./States";
+import States from "./components/States"
 
 const Contactus = () => {
   return (
-    <>
     <section className="relative overflow-hidden px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
       {/* 1. Background Video */}
      {/* 1. Background Video */}
@@ -64,13 +63,9 @@ const Contactus = () => {
     </div>
   </div>
 </div>
+  <States/>
       </div>
-
-    
     </section>
-        <States/>
-        </>
-    
   );
 };
 
