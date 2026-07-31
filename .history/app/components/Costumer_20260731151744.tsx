@@ -40,9 +40,9 @@ const Costumer = () => {
           {/* <span className="text-xs font-bold tracking-widest uppercase text-zinc-500 block mb-3 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
             Customer Stories
           </span> */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black  lg:text-6xl bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent mb-6 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black  lg:text-6xl bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent mb-6 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer whitespace-nowrap
           ">
-            Partnering with Organizations to Deliver IT Excellence and Business Growth
+            Partnering with Organizations to <br className='sm-only'/> Deliver IT Excellence and <br className=''/> Business Growth
           </h2>
           <p className="text-zinc-600 text-sm sm:text-base lg:text-lg max-w-2xl leading-relaxed mb-8 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
             Learn how fast-growing companies around the world have been successfully recruiting, onboarding, and improving employee experience with HRLink.
