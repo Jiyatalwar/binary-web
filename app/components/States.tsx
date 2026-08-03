@@ -2,33 +2,33 @@
 
 import React, { useState, useEffect } from 'react'
 
-const AnimatedCounter = ({ targetValue }) => {
-  // Initialize with targetValue to prevent layout shift on first mount
-  const [count, setCount] = useState(targetValue)
-  const [trigger, setTrigger] = useState(0)
+interface AnimatedCounterProps {
+  targetValue: string;
+}
 
-  // 1. Loop that runs every 10 seconds to auto-rerun the animation
+const AnimatedCounter = ({ targetValue }: AnimatedCounterProps) => {
+  // Extract the numeric target up front
+  const numericTarget = parseInt(targetValue.replace(/[^0-9]/g, ''), 10) || 0
+
+  // State now ONLY holds a number type. No more complex type unions!
+  const [count, setCount] = useState<number>(numericTarget)
+  const [trigger, setTrigger] = useState<number>(0)
+
+  // Loop that runs every 10 seconds to auto-rerun the animation
   useEffect(() => {
     const autoRefreshInterval = setInterval(() => {
-      setCount(0) // Reset back to 0 right before animating up
-      setTrigger(prev => prev + 1) // Fire the animation useEffect again
-    }, 10000) // 10,000 milliseconds = 10 seconds
+      setCount(0) // Clean, unambiguous numeric reset
+      setTrigger(prev => prev + 1)
+    }, 10000)
 
     return () => clearInterval(autoRefreshInterval)
   }, [])
 
-  // 2. Core frame-by-frame counting animation logic
+  // Core frame-by-frame counting animation logic
   useEffect(() => {
-    const numericTarget = parseInt(targetValue.replace(/[^0-9]/g, ''), 10)
-    
-    if (isNaN(numericTarget)) {
-      setCount(targetValue)
-      return
-    }
+    setCount(0) 
 
-    setCount(0) // Ensure it starts exactly at 0 for the count up
-
-    const duration = 1500 // Animation takes 1.5 seconds to complete
+    const duration = 1500 
     const frameRate = 1000 / 60 
     const totalFrames = Math.round(duration / frameRate)
     let frame = 0
@@ -36,7 +36,6 @@ const AnimatedCounter = ({ targetValue }) => {
     const counterInterval = setInterval(() => {
       frame++
       
-      // Easing function (easeOutQuad) for a smooth finish
       const progress = frame / totalFrames
       const easeOutProgress = progress * (2 - progress)
       
@@ -51,13 +50,11 @@ const AnimatedCounter = ({ targetValue }) => {
     }, frameRate)
 
     return () => clearInterval(counterInterval)
-  }, [targetValue, trigger])
+  }, [numericTarget, trigger])
 
-  const formatDisplay = (num) => {
-    if (typeof num === 'string') return num
-
-    // Fix explicit typing check implicitly for TypeScript/Linters
-    const formattedNum = Number(num).toLocaleString()
+  // Purely handles the string decoration mapping safely
+  const formatDisplay = (num: number): string => {
+    const formattedNum = num.toLocaleString()
 
     if (targetValue.includes('$') && targetValue.includes('+')) {
       return `$${formattedNum} +`
@@ -70,8 +67,13 @@ const AnimatedCounter = ({ targetValue }) => {
   return <>{formatDisplay(count)}</>
 }
 
+interface StatItem {
+  value: string;
+  label: string;
+}
+
 const States = () => {
-  const statsData = [
+  const statsData: StatItem[] = [
     { value: '76 +', label: 'Turnover (in Million USD)' },
     { value: '220 +', label: 'Experts' },
     { value: '25 +', label: 'Years of Service' },
@@ -89,14 +91,12 @@ const States = () => {
                        border border-gray-800/60 backdrop-blur-md
                        shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)]
                        transition-all duration-700 ease-out hover:border-gray-700/80
-                       min-h-[96px]" // Keeps container structure stable during count resets
+                       min-h-[96px]"
           >
-            {/* Animated Serif Font for Numbers */}
             <span className="text-3xl xl:text-4xl font-serif text-white tracking-wide whitespace-nowrap">
               <AnimatedCounter targetValue={stat.value} />
             </span>
             
-            {/* Label aligned to the right side of the card */}
             <span className="text-white text-xs xl:text-sm text-right font-medium max-w-[110px] leading-snug">
               {stat.label}
             </span>
@@ -107,4 +107,4 @@ const States = () => {
   )
 }
 
-export default States 
+export default States
