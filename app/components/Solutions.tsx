@@ -25,12 +25,12 @@ const SolutionsContent = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const activeTabRef = useRef<HTMLAnchorElement>(null);
   
-  // Read active solution from URL parameter, default to 'Smart Infrastructure'
-  const activeSolution = searchParams.get('solution') || 'Smart Infrastructure';
+  // Read active solution from URL parameter, default to 'Integrated Infrastructure'
+  const activeSolution = searchParams.get('solution') || 'Integrated Infrastructure';
 
   // Primary navigation items
   const solutionsNavbar = [
-    'Smart Infrastructure', 
+    'Integrated Infrastructure', 
     'Application Service',
     'Data Management', 
     'Cloud Solutions', 
@@ -40,7 +40,7 @@ const SolutionsContent = () => {
 
   // Solutions data mapping all components for both modules
   const solutionsDataRepository: Record<string, SolutionData> = {
-    'Smart Infrastructure': {
+    'Integrated Infrastructure': {
       title: 'Integrated Infrastructure',
       tagline: 'Enterprise Networking & Connectivity Solutions',
       description: 'Optimize business connectivity with secure wireless solutions, intelligent network architectures, and scalable infrastructure.',
