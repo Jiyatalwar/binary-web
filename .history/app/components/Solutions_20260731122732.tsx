@@ -171,7 +171,7 @@ const SolutionsContent = () => {
           Our Solutions
         </span>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-black block mb-2 bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent transition-transform duration-300 hover:scale-[1.01] origin-left cursor-pointer">
-        Empowering Enterprise Growth with Cybersecurity, Cloud & IT Modernization
+         Empowering Enterprise Growth Through <br className="hidden sm:inline"/>Cybersecurity, Cloud Transformation, and IT Modernization
         </h2>
       </div>
 

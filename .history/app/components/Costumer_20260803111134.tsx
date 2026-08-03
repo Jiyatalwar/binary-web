@@ -41,8 +41,8 @@ const Costumer = () => {
             Customer Stories
           </span> */}
            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black block mb-2 bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent transition-transform duration-300 hover:scale-[1.01] origin-left cursor-pointer">
-             Partnering with Organizations to  Deliver IT Excellence and Business Growth
-           </h2>
+        Empowering Enterprise Growth with Cybersecurity, Cloud & IT Modernization
+        </h2>
            <h2 className="text-3xl sm:text-3xl md:text-5xl font-black  lg:text-6xl bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent mb-6 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer
           "></h2>
           <p className="text-zinc-600 text-sm sm:text-base lg:text-lg max-w-2xl leading-relaxed mb-8 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
