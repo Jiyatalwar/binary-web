@@ -42,7 +42,7 @@ const Contactus = () => {
           </div>
         </div>
 
-        {/* Right Video Column (Contains your inline demo element) */}
+    
        <div className="w-full max-w-2xl rounded-2xl border border-white/20 shadow-2xl overflow-hidden relative z-30">
   <div className="relative w-full pt-[56.25%] transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
     {/* YouTube iframe replacing the video tag */}
@@ -57,9 +57,7 @@ const Contactus = () => {
     {/* Inner Video Interactive Overlay */}
     <div className="absolute inset-0 z-10 flex flex-col justify-between bg-black/30 p-4 sm:p-6 pointer-events-none">
       <div className="self-start max-w-[320px] text-left">
-        {/* <h3 className="text-lg font-medium leading-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.7)] sm:text-xl lg:text-2xl">
-          How Leading Finance Firms Use AI
-        </h3> */}
+      
       </div>
     </div>
   </div>
