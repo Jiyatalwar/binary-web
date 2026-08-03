@@ -175,8 +175,6 @@ const SolutionsContent = () => {
         </h2>
       </div>
 
-      {/* Solutions Navigation Selector Tabs (Smooth Mobile Horizontal Scroll Added) */}
-     {/* Solutions Navigation Selector Tabs (With Custom Scrollbar Track & Borders) */}
 <div 
   className="my-[30px] sm:my-[40px] -mx-4 px-4 font-black overflow-x-auto snap-x snap-mandatory pb-3
     [&::-webkit-scrollbar]:h-2 
