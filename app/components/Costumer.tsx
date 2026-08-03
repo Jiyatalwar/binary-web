@@ -37,18 +37,13 @@ const Costumer = () => {
         
         {/* Top Header Block */}
         <div className="max-w-3xl mb-12 sm:mb-16 ">
-          {/* <span className="text-xs font-bold tracking-widest uppercase text-zinc-500 block mb-3 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
-            Customer Stories
-          </span> */}
+        
            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black block mb-2 bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent transition-transform duration-300 hover:scale-[1.01] origin-left cursor-pointer">
              Partnering with Organizations to  Deliver IT Excellence and Business Growth
            </h2>
            <h2 className="text-3xl sm:text-3xl md:text-5xl font-black  lg:text-6xl bg-gradient-to-br from-[#004785] via-[#002142] to-[#000d1d] bg-clip-text text-transparent mb-6 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer
           "></h2>
-          {/* <button className="inline-flex items-center gap-2 bg-[#1e3d38] hover:bg-[#162e2a] text-white text-sm font-semibold py-3 px-5 rounded-lg transition-colors group shadow-sm">
-            View all 
-            <ArrowDown size={16} className="group-hover:translate-y-0.5 transition-transform" />
-          </button> */}
+       
         </div>
 
         {/* Featured Big Card Showcase (Row 2 Layout) */}
@@ -58,9 +53,7 @@ const Costumer = () => {
             {/* Left Narrative Frame */}
             <div className="p-8 sm:p-12 lg:p-16 lg:col-span-7 flex flex-col justify-between text-white space-y-12">
               <div>
-                {/* <span className="text-xs font-bold tracking-widest uppercase text-zinc-400 block mb-6 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
-                  Featured
-                </span> */}
+               
                 <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold tracking-tight leading-snug text-zinc-100 mb-12 transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
                   Enterprise Cybersecurity, Cloud, Networking & Infrastructure Success Stories
                 </h3>
