@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link'; // Import the Next.js Link component
+import Link from 'next/link'; 
 import { Menu, X, Search } from 'lucide-react';
 import Hero from './Hero';
 
@@ -9,7 +9,7 @@ export default function Navbar() {
   const [activeTab, setActiveTab] = useState<string>('');
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  // 1. Updated paths to point to real dynamic directories
+// path link for navbar
   const navItems = [
     { name: 'Solutions', href: '/solutions' },
     { name: 'Services', href: '/services' },
@@ -40,7 +40,7 @@ export default function Navbar() {
       src="/logo/Binary Logo White.png"  
       alt="Binary Global Logo"
       fill
-      // Tells Next.js to fetch an appropriately scaled, sharp image asset
+      
       sizes="(max-width: 640px) 120px, (max-width: 768px) 140px, (max-width: 1024px) 160px, 180px"
       className="object-contain"
       priority                  
