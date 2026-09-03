@@ -1,41 +1,106 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Binary Web
+
+Binary Web is a modern marketing website for Binary Global built with Next.js, React, TypeScript, and Tailwind CSS. The project presents the company’s solutions, services, industries, financing, resources, and contact information through a polished and responsive front end.
+
+## Project Overview
+
+This website is designed as a business landing and content site with:
+
+- a responsive hero section and animated navigation
+- dedicated pages for solutions, services, industries, financing, resources, about, and contact
+- a homepage content management panel for editing key marketing sections
+- a basic admin access flow for restricted content updates
+
+## Tech Stack
+
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+- Supabase client integration for content persistence
+
+## Main Features
+
+### Public website
+The public-facing experience includes:
+- a sticky navbar with desktop and mobile navigation
+- a video-backed hero section with rotating slides
+- solution cards and section-based content for key business areas
+- a footer with company and resource links
+
+### Admin dashboard
+The admin area allows authenticated users to update homepage content such as:
+- hero titles and subtitles
+- why-us content
+- customer story section text
+- contact section content
+
+> The current admin setup is a simple client-side authentication flow and is intended for local/demo use. For production, it should be upgraded to a secure backend-based authentication system.
+
+## Project Structure
+
+```text
+app/
+  components/       # Reusable UI components
+  about/            # About page
+  admin/            # Admin login and dashboard
+  contact/          # Contact page
+  financing/        # Financing page
+  industries/       # Industries page
+  resources/        # Resources page
+  services/         # Services page
+  solutions/        # Solutions page
+  page.tsx          # Homepage entry
+lib/
+  supabase/         # Content helpers and Supabase integration
+public/             # Static assets such as logos and videos
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18 or newer
+- npm or pnpm
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+### Lint the project
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run lint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Homepage content is loaded from browser storage and can be edited through the admin panel.
+- Static assets such as logos and videos are stored under the public folder.
+- The site is built using the App Router structure in Next.js.
 
-## Deploy on Vercel
+## Future Improvements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# binary-web
-new design for site by next.js  and tailwind  
->>>>>>> 499b2720bc387dcdc8ade9d350a149beb1353a90
+Possible enhancements include:
+- replacing the hardcoded admin auth with a real backend authentication system
+- storing admin content in a database rather than browser storage
+- connecting more sections of the admin panel to real content models
+- adding CMS-like editing for all website pages
