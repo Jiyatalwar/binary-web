@@ -89,17 +89,22 @@ export default function AdminDashboard() {
 
   // Load saved content from localStorage on mount
   useEffect(() => {
-    const savedHero = localStorage.getItem('admin_hero');
-    const savedContact = localStorage.getItem('admin_contact');
-    const savedNavLinks = localStorage.getItem('admin_navbar_links');
-    const savedSlides = localStorage.getItem('admin_navbar_slides');
-    const savedSolutions = localStorage.getItem('admin_navbar_solutions');
+    const loadSavedContent = () => {
+      const savedHero = localStorage.getItem('admin_hero');
+      const savedContact = localStorage.getItem('admin_contact');
+      const savedNavLinks = localStorage.getItem('admin_navbar_links');
+      const savedSlides = localStorage.getItem('admin_navbar_slides');
+      const savedSolutions = localStorage.getItem('admin_navbar_solutions');
 
-    if (savedHero) setHeroData(JSON.parse(savedHero));
-    if (savedContact) setContactData(JSON.parse(savedContact));
-    if (savedNavLinks) setNavLinks(JSON.parse(savedNavLinks));
-    if (savedSlides) setBannerSlides(JSON.parse(savedSlides));
-    if (savedSolutions) setSolutionsData(JSON.parse(savedSolutions));
+      if (savedHero) setHeroData(JSON.parse(savedHero));
+      if (savedContact) setContactData(JSON.parse(savedContact));
+      if (savedNavLinks) setNavLinks(JSON.parse(savedNavLinks));
+      if (savedSlides) setBannerSlides(JSON.parse(savedSlides));
+      if (savedSolutions) setSolutionsData(JSON.parse(savedSolutions));
+    };
+
+    const loadTimer = window.setTimeout(loadSavedContent, 0);
+    return () => window.clearTimeout(loadTimer);
   }, []);
 
   const handleSave = () => {

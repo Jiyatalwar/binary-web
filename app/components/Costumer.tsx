@@ -85,7 +85,7 @@ const Costumer = () => {
 
         {/* Subsection Filters Head */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-zinc-200 pb-5 mb-10 mt-0 sm:mt-[-30px] lg:mt-[-70px]">
-          <h4 className="text-2xl font-bold text-zinc-900 tracking-tight transition-transform duration-300 hover:scale-[1.03] origin-left cursor-pointer">
+          <h4 className="text-2xl font-bold text-zinc-900 tracking-tight transition-transform duration-300 hover:scale-[1.03] origin'-left cursor-pointer">
             Customer Success Stories
           </h4>
           

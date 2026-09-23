@@ -26,8 +26,6 @@ const AnimatedCounter = ({ targetValue }: AnimatedCounterProps) => {
 
   // Core frame-by-frame counting animation logic
   useEffect(() => {
-    setCount(0) 
-
     const duration = 1500 
     const frameRate = 1000 / 60 
     const totalFrames = Math.round(duration / frameRate)
